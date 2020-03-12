@@ -1,0 +1,965 @@
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100512-K743/Combined/F1910180100512-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910180100512-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910180100512-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910180100512-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910180100512-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910180100512-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910180100512-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910180100512-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910180100512-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910180100512-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910180100512-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910180100512-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910180100512-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100512-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100512-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100512-K743/Combined/F1910180100512-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910180100512-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100512-K743           RET       KIF5B:exon15~RET:exon12       10:32315885         10:43610331         710                 886                      10                       22                       2.42%               
+F1910180100512-K743           RET       RET:exon11~KIF5B:exon16       10:43610317         10:32315888         704                 907                      10                       17                       1.84%               
+F1910180100512-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100512-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100513-K743/Combined/F1910180100513-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910180100513-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910180100513-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910180100513-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910180100513-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910180100513-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910180100513-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910180100513-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910180100513-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910180100513-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910180100513-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910180100513-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910180100513-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100513-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100513-K743 MET       MET:NM_000245.2:exon14        c.3028G>C(p.D1010H)                               chr7:116412043      chr7:116412043      G                   C                   656(634:22)         3.35%               
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100513-K743/Combined/F1910180100513-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910180100513-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100513-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100513-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100513-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100514-K743/Combined/F1910180100514-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910180100514-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910180100514-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910180100514-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910180100514-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910180100514-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910180100514-K743 KRAS      KRAS:NM_004985.3:exon2        c.35G>A(p.G12D)                                   chr12:25398284      chr12:25398284      C                   T                   577(570:7)          1.21%               
+F1910180100514-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910180100514-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910180100514-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910180100514-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910180100514-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910180100514-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100514-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100514-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100514-K743/Combined/F1910180100514-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910180100514-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100514-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100514-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100514-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100515-K743/Combined/F1910180100515-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910180100515-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910180100515-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910180100515-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910180100515-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910180100515-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910180100515-K743 KRAS      KRAS:NM_004985.3:exon2        c.35G>T(p.G12V)                                   chr12:25398284      chr12:25398284      C                   A                   527(520:7)          1.33%               
+F1910180100515-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910180100515-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910180100515-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910180100515-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910180100515-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910180100515-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100515-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100515-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100515-K743/Combined/F1910180100515-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910180100515-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100515-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100515-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100515-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100516-K743/Combined/F1910180100516-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910180100516-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910180100516-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910180100516-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910180100516-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910180100516-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910180100516-K743 KRAS      KRAS:NM_004985.3:exon2        c.34G>T(p.G12C)                                   chr12:25398285      chr12:25398285      C                   A                   423(415:8)          1.89%               
+F1910180100516-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910180100516-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910180100516-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910180100516-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910180100516-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910180100516-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100516-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100516-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100516-K743/Combined/F1910180100516-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910180100516-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100516-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100516-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100516-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100517-K743/Combined/F1910180100517-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910180100517-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910180100517-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910180100517-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910180100517-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910180100517-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910180100517-K743 KRAS      KRAS:NM_004985.3:exon2        c.35G>C(p.G12A)                                   chr12:25398284      chr12:25398284      C                   G                   421(411:10)         2.38%               
+F1910180100517-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910180100517-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910180100517-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910180100517-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910180100517-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910180100517-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100517-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100517-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100517-K743/Combined/F1910180100517-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910180100517-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100517-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100517-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100517-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100518-K743/Combined/F1910180100518-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910180100518-K743 EGFR      EGFR:NM_005228.3:exon21       c.2573T>G(p.L858R)                                chr7:55259515       chr7:55259515       T                   G                   1323(1240:83)       6.27%               
+F1910180100518-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910180100518-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910180100518-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910180100518-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910180100518-K743 KRAS      KRAS:NM_004985.3:exon2        c.34G>A(p.G12S)                                   chr12:25398285      chr12:25398285      C                   T                   503(486:17)         3.38%               
+F1910180100518-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910180100518-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910180100518-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910180100518-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910180100518-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910180100518-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100518-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100518-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100518-K743/Combined/F1910180100518-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910180100518-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100518-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100518-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100518-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100519-K743/Combined/F1910180100519-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910180100519-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910180100519-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910180100519-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910180100519-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910180100519-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910180100519-K743 KRAS      KRAS:NM_004985.3:exon2        c.34G>C(p.G12R)                                   chr12:25398285      chr12:25398285      C                   G                   604(575:29)         4.8%                
+F1910180100519-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910180100519-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910180100519-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910180100519-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910180100519-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910180100519-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100519-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100519-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100519-K743/Combined/F1910180100519-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910180100519-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100519-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100519-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100519-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100520-K743/Combined/F1910180100520-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910180100520-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910180100520-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910180100520-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910180100520-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910180100520-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910180100520-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910180100520-K743 KRAS      KRAS:NM_004985.3:exon2        c.38G>A(p.G13D)                                   chr12:25398281      chr12:25398281      C                   T                   652(645:7)          1.07%               
+F1910180100520-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910180100520-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910180100520-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910180100520-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910180100520-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100520-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100520-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100520-K743/Combined/F1910180100520-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910180100520-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100520-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100520-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100520-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100521-K743/Combined/F1910180100521-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910180100521-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910180100521-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910180100521-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910180100521-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910180100521-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910180100521-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910180100521-K743 KRAS      KRAS:NM_004985.3:exon2        c.37G>T(p.G13C)                                   chr12:25398282      chr12:25398282      C                   A                   789(755:34)         4.31%               
+F1910180100521-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910180100521-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910180100521-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910180100521-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910180100521-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100521-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100521-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100521-K743/Combined/F1910180100521-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910180100521-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100521-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100521-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100521-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100522-K743/Combined/F1910180100522-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910180100522-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910180100522-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910180100522-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910180100522-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910180100522-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910180100522-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910180100522-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910180100522-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910180100522-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910180100522-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910180100522-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910180100522-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100522-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100522-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100522-K743/Combined/F1910180100522-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910180100522-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100522-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100522-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100522-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100523-K743/Combined/F1910180100523-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910180100523-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910180100523-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910180100523-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910180100523-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910180100523-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910180100523-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910180100523-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910180100523-K743 NRAS      NRAS:NM_002524.4:exon3        c.182A>T(p.Q61L)                                  chr1:115256529      chr1:115256529      T                   A                   594(582:12)         2.02%               
+F1910180100523-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910180100523-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910180100523-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910180100523-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100523-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100523-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100523-K743/Combined/F1910180100523-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910180100523-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100523-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100523-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100523-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100524-K743/Combined/F1910180100524-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910180100524-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910180100524-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910180100524-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910180100524-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910180100524-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910180100524-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910180100524-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910180100524-K743 NRAS      NRAS:NM_002524.4:exon3        c.181C>A(p.Q61K)                                  chr1:115256530      chr1:115256530      G                   T                   574(566:8)          1.39%               
+F1910180100524-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910180100524-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910180100524-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910180100524-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100524-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100524-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100524-K743/Combined/F1910180100524-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910180100524-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100524-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100524-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100524-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100525-K743/Combined/F1910180100525-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910180100525-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910180100525-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910180100525-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910180100525-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910180100525-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910180100525-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910180100525-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910180100525-K743 NRAS      NRAS:NM_002524.4:exon3        c.183A>C(p.Q61H)                                  chr1:115256528      chr1:115256528      T                   G                   618(596:22)         3.56%               
+F1910180100525-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910180100525-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910180100525-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910180100525-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100525-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100525-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100525-K743/Combined/F1910180100525-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910180100525-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100525-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100525-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100525-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100526-K743/Combined/F1910180100526-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910180100526-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910180100526-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910180100526-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910180100526-K743 BRAF      BRAF:NM_004333.4:exon15       c.1799T>A(p.V600E)                                chr7:140453136      chr7:140453136      A                   T                   687(670:17)         2.47%               
+F1910180100526-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910180100526-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910180100526-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910180100526-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910180100526-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910180100526-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910180100526-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910180100526-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100526-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100526-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100526-K743/Combined/F1910180100526-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910180100526-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100526-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100526-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100526-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100527-K743/Combined/F1910180100527-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910180100527-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910180100527-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910180100527-K743 EGFR      EGFR:NM_005228.3:exon21       c.2582T>A(p.L861Q)                                chr7:55259524       chr7:55259524       T                   A                   1529(1451:78)       5.1%                
+F1910180100527-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910180100527-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910180100527-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910180100527-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910180100527-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910180100527-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910180100527-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910180100527-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910180100527-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100527-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100527-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100527-K743/Combined/F1910180100527-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910180100527-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100527-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100527-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100527-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100528-K743/Combined/F1910180100528-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910180100528-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910180100528-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910180100528-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910180100528-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910180100528-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910180100528-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910180100528-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910180100528-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910180100528-K743 PIK3CA    PIK3CA:NM_006218.2:exon9      c.1633G>A(p.E545K)                                chr3:178936091      chr3:178936091      G                   A                   610(592:18)         2.95%               
+F1910180100528-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910180100528-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910180100528-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100528-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100528-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100528-K743/Combined/F1910180100528-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910180100528-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100528-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100528-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100528-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100529-K743/Combined/F1910180100529-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910180100529-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910180100529-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910180100529-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910180100529-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910180100529-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910180100529-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910180100529-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910180100529-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910180100529-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910180100529-K743 PIK3CA    PIK3CA:NM_006218.2:exon20     c.3140A>G(p.H1047R)                               chr3:178952085      chr3:178952085      A                   G                   686(668:18)         2.62%               
+F1910180100529-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910180100529-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100529-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100529-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100529-K743/Combined/F1910180100529-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910180100529-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100529-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100529-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100529-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100530-K743/Combined/F1910180100530-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910180100530-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910180100530-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910180100530-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910180100530-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910180100530-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910180100530-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910180100530-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910180100530-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910180100530-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910180100530-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910180100530-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910180100530-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100530-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100530-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100530-K743/Combined/F1910180100530-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910180100530-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100530-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100530-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100530-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100531-K743/Combined/F1910180100531-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910180100531-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910180100531-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910180100531-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910180100531-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910180100531-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910180100531-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910180100531-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910180100531-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910180100531-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910180100531-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910180100531-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910180100531-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100531-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100531-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100531-K743/Combined/F1910180100531-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910180100531-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100531-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100531-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910180100531-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100532-K743/Combined/F1910180100532-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910180100532-K743 EGFR      EGFR:NM_005228.3:exon21       c.2573T>G(p.L858R)                                chr7:55259515       chr7:55259515       T                   G                   30157(15528:14629)  48.51%              
+F1910180100532-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910180100532-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910180100532-K743 BRAF      BRAF:NM_004333.4:exon15       c.1799T>A(p.V600E)                                chr7:140453136      chr7:140453136      A                   T                   1272(1005:267)      20.99%              
+F1910180100532-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910180100532-K743 KRAS      KRAS:NM_004985.3:exon2        c.34G>T(p.G12C)                                   chr12:25398285      chr12:25398285      C                   A                   28410(14544:13866)  48.81%              
+F1910180100532-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910180100532-K743 NRAS      NRAS:NM_002524.4:exon3        c.181C>A(p.Q61K)                                  chr1:115256530      chr1:115256530      G                   T                   32535(15395:17140)  52.68%              
+F1910180100532-K743 PIK3CA    PIK3CA:NM_006218.2:exon9      c.1633G>A(p.E545K)                                chr3:178936091      chr3:178936091      G                   A                   1683(1586:97)       5.76%               
+F1910180100532-K743 PIK3CA    PIK3CA:NM_006218.2:exon20     c.3140A>G(p.H1047R)                               chr3:178952085      chr3:178952085      A                   G                   1952(1802:150)      7.68%               
+F1910180100532-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910180100532-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910180100532-K743 ERBB2     ERBB2:NM_004448.2:exon20      c.2313_2324dupATACGTGATGGC(p.Y772_A775dup)        chr17:37880981      chr17:37880982      -                   GCATACGTGATG        9673(9500:173)      1.79%               
+F1910180100532-K743 ERBB2     ERBB2:NM_004448.2:exon20      c.2326_2327insTGT(p.G776delinsVC)                 chr17:37880997      chr17:37880998      -                   TGT                 10891(10692:199)    1.83%               
+F1910180100532-K743 MET       MET:NM_000245.2:intron14      c.3028+1G>T                                       chr7:116412044      chr7:116412044      G                   T                   1720(1546:174)      10.12%              
+
+
+cat /GPFS07/GSPipeline07/20191018_NDX550249_0015_AHGK55BGXB/Results/F1910180100532-K743/Combined/F1910180100532-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910180100532-K743           ALK       EML4:exon13~ALK:exon20        2:42523883          2:29446779          4291                9467                     6355                     9235                     49.38%              
+F1910180100532-K743           RET       CCDC6:exon2~RET:exon11        10:61610513         10:43610033         3717                11652                    12253                    16494                    58.6%               
+F1910180100532-K743           ROS1      CD74:exon6~ROS1:exon34        5:149783094         6:117647232         2842                3707                     9339                     13615                    78.6%               
+F1910180100532-K743           NTRK1     TPM3:exon10~NTRK1:exon8       1:154137492         1:156843543         964                 1071                     73                       188                      14.93%              
+F1910180100532-K743           NTRK1     TPM3:exon10~NTRK1:exon8       1:154137489         1:156843542         959                 1044                     64                       105                      9.14%               
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100587-K743/Combined/F1910200100587-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910200100587-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910200100587-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910200100587-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910200100587-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910200100587-K743 EGFR      EGFR:NM_005228.3:exon18       c.2155G>A(p.G719S)                                chr7:55241707       chr7:55241707       G                   A                   1895(1370:525)      27.7%               
+F1910200100587-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910200100587-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910200100587-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910200100587-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910200100587-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910200100587-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910200100587-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100587-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100587-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100587-K743/Combined/F1910200100587-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910200100587-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100587-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100587-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100587-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100588-K743/Combined/F1910200100588-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910200100588-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910200100588-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910200100588-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910200100588-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910200100588-K743 EGFR      EGFR:NM_005228.3:exon18       c.2156G>C(p.G719A)                                chr7:55241708       chr7:55241708       G                   C                   1607(1211:396)      24.64%              
+F1910200100588-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910200100588-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910200100588-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910200100588-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910200100588-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910200100588-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910200100588-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100588-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100588-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100588-K743/Combined/F1910200100588-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910200100588-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100588-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100588-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100588-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100589-K743/Combined/F1910200100589-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910200100589-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910200100589-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910200100589-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910200100589-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910200100589-K743 EGFR      EGFR:NM_005228.3:exon18       c.2155G>T(p.G719C)                                chr7:55241707       chr7:55241707       G                   T                   1399(1277:122)      8.72%               
+F1910200100589-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910200100589-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910200100589-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910200100589-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910200100589-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910200100589-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910200100589-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100589-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100589-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100589-K743/Combined/F1910200100589-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910200100589-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100589-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100589-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100589-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100590-K743/Combined/F1910200100590-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910200100590-K743 EGFR      EGFR:NM_005228.3:exon21       c.2573T>G(p.L858R)                                chr7:55259515       chr7:55259515       T                   G                   2041(1482:559)      27.39%              
+F1910200100590-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910200100590-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910200100590-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910200100590-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910200100590-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910200100590-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910200100590-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910200100590-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910200100590-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910200100590-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910200100590-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100590-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100590-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100590-K743/Combined/F1910200100590-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910200100590-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100590-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100590-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100590-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100591-K743/Combined/F1910200100591-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910200100591-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910200100591-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910200100591-K743 EGFR      EGFR:NM_005228.3:exon21       c.2582T>A(p.L861Q)                                chr7:55259524       chr7:55259524       T                   A                   2094(1893:201)      9.6%                
+F1910200100591-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910200100591-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910200100591-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910200100591-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910200100591-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910200100591-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910200100591-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910200100591-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910200100591-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100591-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100591-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100591-K743/Combined/F1910200100591-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910200100591-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100591-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100591-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100591-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100592-K743/Combined/F1910200100592-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910200100592-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910200100592-K743 EGFR      EGFR:NM_005228.3:exon20       c.2369C>T(p.T790M)                                chr7:55249071       chr7:55249071       C                   T                   1502(1308:194)      12.92%              
+F1910200100592-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910200100592-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910200100592-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910200100592-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910200100592-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910200100592-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910200100592-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910200100592-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910200100592-K743 EGFR      EGFR:NM_005228.3:exon19       c.2235_2249delGGAATTAAGAGAAGC(p.E746_A750del)     chr7:55242465       chr7:55242479       GGAATTAAGAGAAGC     -                   1271(1020:251)      19.75%              
+F1910200100592-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100592-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100592-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100592-K743/Combined/F1910200100592-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910200100592-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100592-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100592-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100592-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100593-K743/Combined/F1910200100593-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910200100593-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910200100593-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910200100593-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910200100593-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910200100593-K743 EGFR      EGFR:NM_005228.3:exon18       c.2155G>A(p.G719S)                                chr7:55241707       chr7:55241707       G                   A                   1586(1431:155)      9.77%               
+F1910200100593-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910200100593-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910200100593-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910200100593-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910200100593-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910200100593-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910200100593-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100593-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100593-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100593-K743/Combined/F1910200100593-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910200100593-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100593-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100593-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100593-K743           NTRK1     USH2A:exon34~NTRK1:exon12     1:216166837         1:156844885         0                   655                      0                        6                        0.91%               
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100594-K743/Combined/F1910200100594-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910200100594-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910200100594-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910200100594-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910200100594-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910200100594-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910200100594-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910200100594-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910200100594-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910200100594-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910200100594-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910200100594-K743 EGFR      EGFR:NM_005228.3:exon19       c.2236_2250delGAATTAAGAGAAGCA(p.E746_A750del)     chr7:55242466       chr7:55242480       GAATTAAGAGAAGCA     -                   976(885:91)         9.32%               
+F1910200100594-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100594-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100594-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100594-K743/Combined/F1910200100594-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910200100594-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100594-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100594-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100594-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100595-K743/Combined/F1910200100595-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910200100595-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910200100595-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910200100595-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910200100595-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910200100595-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910200100595-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910200100595-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910200100595-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910200100595-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910200100595-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910200100595-K743 EGFR      EGFR:NM_005228.3:exon19       c.2235_2249delGGAATTAAGAGAAGC(p.E746_A750del)     chr7:55242465       chr7:55242479       GGAATTAAGAGAAGC     -                   858(740:118)        13.75%              
+F1910200100595-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100595-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100595-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100595-K743/Combined/F1910200100595-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910200100595-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100595-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100595-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100595-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100596-K743/Combined/F1910200100596-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910200100596-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910200100596-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910200100596-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910200100596-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910200100596-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910200100596-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910200100596-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910200100596-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910200100596-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910200100596-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910200100596-K743 EGFR      EGFR:NM_005228.3:exon19       c.2240_2254delTAAGAGAAGCAACAT(p.L747_T751del)     chr7:55242468       chr7:55242482       ATTAAGAGAAGCAAC     -                   1093(991:102)       9.33%               
+F1910200100596-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100596-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100596-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100596-K743/Combined/F1910200100596-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910200100596-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100596-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100596-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100596-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100597-K743/Combined/F1910200100597-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910200100597-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910200100597-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910200100597-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910200100597-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910200100597-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910200100597-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910200100597-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910200100597-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910200100597-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910200100597-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910200100597-K743 EGFR      EGFR:NM_005228.3:exon19       c.2240_2257delTAAGAGAAGCAACATCTC(p.L747_P753delinsS)chr7:55242470       chr7:55242487       TAAGAGAAGCAACATCTC  -                   1483(937:546)       36.82%              
+F1910200100597-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100597-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100597-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100597-K743/Combined/F1910200100597-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910200100597-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100597-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100597-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100597-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100598-K743/Combined/F1910200100598-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910200100598-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910200100598-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910200100598-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910200100598-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910200100598-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910200100598-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910200100598-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910200100598-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910200100598-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910200100598-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910200100598-K743 EGFR      EGFR:NM_005228.3:exon19       c.2239_2248delTTAAGAGAAGinsC(p.L747_A750delinsP)  chr7:55242469       chr7:55242478       TTAAGAGAAG          C                   1513(1042:471)      31.13%              
+F1910200100598-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100598-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100598-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100598-K743/Combined/F1910200100598-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910200100598-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100598-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100598-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100598-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100599-K743/Combined/F1910200100599-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910200100599-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910200100599-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910200100599-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910200100599-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910200100599-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910200100599-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910200100599-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910200100599-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910200100599-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910200100599-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910200100599-K743 EGFR      EGFR:NM_005228.3:exon19       c.2237_2255delAATTAAGAGAAGCAACATCinsT(p.E746_S752delinsV)chr7:55242467       chr7:55242485       AATTAAGAGAAGCAACATC T                   1368(1108:260)      19.01%              
+F1910200100599-K743 EGFR      .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100599-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100599-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100599-K743/Combined/F1910200100599-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910200100599-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100599-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100599-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100599-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100600-K743/Combined/F1910200100600-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910200100600-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910200100600-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910200100600-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910200100600-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910200100600-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910200100600-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910200100600-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910200100600-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910200100600-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910200100600-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910200100600-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910200100600-K743 EGFR      EGFR:NM_005228.3:intron19     c.2284-5_2290dupTCCAGGAAGCCT(p.A763_Y764insFQEA)  chr7:55248980       chr7:55248981       -                   TCCAGGAAGCCT        1266(1038:228)      18.01%              
+F1910200100600-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100600-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100600-K743/Combined/F1910200100600-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910200100600-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100600-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100600-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100600-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100601-K743/Combined/F1910200100601-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910200100601-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910200100601-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910200100601-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910200100601-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910200100601-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910200100601-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910200100601-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910200100601-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910200100601-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910200100601-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910200100601-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910200100601-K743 EGFR      EGFR:NM_005228.3:exon20       c.2303_2311dupGCGTGGACA(p.S768_D770dup)           chr7:55249002       chr7:55249003       -                   CAGCGTGGA           1404(908:496)       35.33%              
+F1910200100601-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100601-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100601-K743/Combined/F1910200100601-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910200100601-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100601-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100601-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100601-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100602-K743/Combined/F1910200100602-K743.AllDriver.csv | sed 's/ref:alt/RD:AD/g'|sed 's/,/\t/g' | awk '{printf "%-20s%-10s%-30s%-50s%-20s%-20s%-20s%-20s%-20s%-20s\n",$1,$3,$4,$5,$6,$7,$8,$9,$15,$13}'
+id                  Gene      Gene.ID                       AAChange                                          Chr.start           Chr.end             Ref                 Alt                 DP(RD:AD)           AF                  
+F1910200100602-K743 EGFR      .                             L858R                                             .                   .                   .                   .                   .                   .                   
+F1910200100602-K743 EGFR      .                             T790M                                             .                   .                   .                   .                   .                   .                   
+F1910200100602-K743 EGFR      .                             L861Q                                             .                   .                   .                   .                   .                   .                   
+F1910200100602-K743 BRAF      .                             V600E                                             .                   .                   .                   .                   .                   .                   
+F1910200100602-K743 EGFR      .                             G719                                              .                   .                   .                   .                   .                   .                   
+F1910200100602-K743 KRAS      .                             G12                                               .                   .                   .                   .                   .                   .                   
+F1910200100602-K743 KRAS      .                             G13                                               .                   .                   .                   .                   .                   .                   
+F1910200100602-K743 NRAS      .                             Q61                                               .                   .                   .                   .                   .                   .                   
+F1910200100602-K743 PIK3CA    .                             E545                                              .                   .                   .                   .                   .                   .                   
+F1910200100602-K743 PIK3CA    .                             H1047                                             .                   .                   .                   .                   .                   .                   
+F1910200100602-K743 EGFR      .                             E19Del                                            .                   .                   .                   .                   .                   .                   
+F1910200100602-K743 EGFR      EGFR:NM_005228.3:exon20       c.2300_2308dupCCAGCGTGG(p.A767_V769dup)           chr7:55248998       chr7:55248999       -                   TGGCCAGCG           1957(1254:703)      35.92%              
+F1910200100602-K743 ERBB2     .                             E20Ins                                            .                   .                   .                   .                   .                   .                   
+F1910200100602-K743 MET       .                             E14Skip                                           .                   .                   .                   .                   .                   .                   
+
+
+cat /GPFS07/GSPipeline07/20191020_NDX550219_0020_AHGCMNBGXB/Results/F1910200100602-K743/Combined/F1910200100602-K743.AllSv.tsv | sed 's/ //g' | awk '{printf "%-30s%-10s%-30s%-20s%-20s%-20s%-25s%-25s%-25s%-20s\n",$1,$2,$7,$8,$9,$11,$12,$13,$14,$15}'
+#Sample                       MajoGene  Fusion                        Pos1                Pos2                TumorReferenceCount TumorSplitReferenceCount TumorVariantCount        TumorSplitVariantCount   AF                  
+F1910200100602-K743_sv        ALK       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100602-K743_sv        RET       .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100602-K743_sv        ROS1      .                             .                   .                   .                   .                        .                        .                        .                   
+F1910200100602-K743_sv        NTRK1     .                             .                   .                   .                   .                        .                        .                        .                   
+
